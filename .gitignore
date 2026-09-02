@@ -1,0 +1,23 @@
+# Jupytext pairs.
+#
+# The .ipynb is the version in git — outputs and all, because the outputs are
+# the point of these notebooks. The paired script is generated from it on
+# demand and is never committed. It is given a `.nb.py` suffix precisely so
+# that this one line can ignore it without touching ordinary Python files,
+# which are tracked normally.
+*.nb.py
+
+# Secrets
+.env
+
+# Rendered site (built by CI, and locally for previewing)
+_site/
+
+# Environments and caches
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Notebook run artifacts
+.mem0-run/
