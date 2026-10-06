@@ -73,5 +73,5 @@ Pages. Nothing is executed during the build; the committed outputs are what gets
 published. To preview locally:
 
 ```bash
-uvx --from "git+https://github.com/anton-dergunov/lectern@v0.1.0" lectern build . -o _site --clean && open _site/index.html
+uvx --from "git+https://github.com/anton-dergunov/lectern@v0.2.0" lectern build . -o _site --clean && open _site/index.html
 ```

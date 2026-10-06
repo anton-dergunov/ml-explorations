@@ -2,4 +2,3 @@
 title = "ML Explorations"
 description = "Small self-contained experiments, each one written up as a notebook and rendered here with the outputs it actually produced."
 repo_url = "https://github.com/anton-dergunov/ml-explorations"
-exclude = ["tools/*"]
