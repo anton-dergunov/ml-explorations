@@ -6,6 +6,11 @@
   // sync instead of silently discarding whichever side it considers older.
   // Without that flag a sync quietly keeps the newer file and throws the other
   // one's edits away.
+  //
+  // Both rely on the pairing declared in jupytext.toml at the repo root. If a
+  // notebook is not paired, `--sync` warns and exits 0 — the task reports
+  // success and writes nothing — so a task that seems to do nothing means the
+  // pairing was not picked up, not that the sync failed.
   "version": "2.0.0",
   "tasks": [
     {

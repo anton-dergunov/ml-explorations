@@ -67,10 +67,11 @@ committing, or the notebook will show results its code never produced.
 
 ## Publishing
 
-Every push to `main` renders the notebooks with `nbconvert` and deploys them to
-GitHub Pages. Nothing is executed during the build; the committed outputs are
-what gets published. To preview locally:
+Every push to `main` renders the notebooks with
+[lectern](https://github.com/anton-dergunov/lectern) and deploys them to GitHub
+Pages. Nothing is executed during the build; the committed outputs are what gets
+published. To preview locally:
 
 ```bash
-python tools/build_site.py && open _site/index.html
+uvx --from "git+https://github.com/anton-dergunov/lectern@v0.1.0" lectern build . -o _site --clean && open _site/index.html
 ```

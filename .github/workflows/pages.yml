@@ -23,15 +23,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v6
 
-      - name: Install nbconvert
-        run: pip install nbconvert
-
+      # Pinned to a tag, so the site only changes its look when this line does.
+      # Title, description and what to leave out are in lectern.toml.
       - name: Render notebooks
-        run: python tools/build_site.py
+        run: uvx --from "git+https://github.com/anton-dergunov/lectern@v0.1.0" lectern build . -o _site
 
       - uses: actions/configure-pages@v5
 

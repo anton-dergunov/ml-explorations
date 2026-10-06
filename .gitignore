@@ -21,3 +21,4 @@ __pycache__/
 
 # Notebook run artifacts
 .mem0-run/
+.DS_Store
