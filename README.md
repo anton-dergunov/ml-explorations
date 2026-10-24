@@ -12,9 +12,10 @@ tablet or phone, so the rendered page is the better link to follow and to share.
 
 ## Experiments
 
+None at the moment. The Mem0 notebook that used to live here moved to a repository of its own, `agent-memory-eval`, next to notebooks on three other agent memory systems.
+
 | Experiment | What it looks at | |
 |---|---|---|
-| **Mem0 intuition** | What an LLM memory layer really stores, what happens when a user changes their mind, and whether retrieval can tell the current fact from the stale one | [read](https://anton-dergunov.github.io/ml-explorations/mem0-intuition/mem0-intuition.html) · [notebook](mem0-intuition/mem0-intuition.ipynb) |
 
 ## Running one yourself
 
@@ -73,5 +74,5 @@ Pages. Nothing is executed during the build; the committed outputs are what gets
 published. To preview locally:
 
 ```bash
-uvx --from "git+https://github.com/anton-dergunov/lectern@v0.2.0" lectern build . -o _site --clean && open _site/index.html
+uvx --from "git+https://github.com/anton-dergunov/lectern@main" lectern build . -o _site --clean && open _site/index.html
 ```
